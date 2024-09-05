@@ -1,0 +1,7 @@
+<nav>
+  <a routerLink="/tasks/create">Create Task</a>
+</nav>
+<h2>Tasks</h2>
+<article>
+  <app-task *ngFor="let task of tasks" [task]="task"></app-task>
+</article>
