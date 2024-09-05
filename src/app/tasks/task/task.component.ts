@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Component, DoCheck, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-task',
@@ -6,12 +6,15 @@ import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/cor
   templateUrl: './task.component.html',
   styleUrl: './task.component.css'
 })
-export class TaskComponent implements OnInit, OnChanges {
+export class TaskComponent implements OnInit, OnChanges, DoCheck {
   @Input() task: string = '';
   ngOnChanges(changes: SimpleChanges): void {
-    console.log('TasksComponent ngOnChanges', changes);
+    console.log(this.task + ' TasksComponent ngOnChanges', changes);
   }
   ngOnInit(): void {
-    console.log('TasksComponent ngOnInit');
+    console.log(this.task + ' TasksComponent ngOnInit');
+  }
+  ngDoCheck(): void {
+    console.log(this.task + ' TasksComponent ngDoCheck');
   }
 }
