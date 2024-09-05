@@ -30,6 +30,6 @@ export class TaskComponent implements OnInit, OnChanges, DoCheck, AfterContentIn
     console.log(this.task + ' TasksComponent ngAfterViewChecked');
   }
   ngOnDestroy(): void {
-    console.log(this.task + ' TasksComponent ngOnDestroy');
+    console.log(this.task + ' TasksComponent ngAfterViewChecked');
   }
 }
