@@ -1,4 +1,4 @@
-import { AfterContentChecked, AfterContentInit, Component, DoCheck, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { AfterContentChecked, AfterContentInit, AfterViewInit, Component, DoCheck, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-task',
@@ -6,7 +6,7 @@ import { AfterContentChecked, AfterContentInit, Component, DoCheck, Input, OnCha
   templateUrl: './task.component.html',
   styleUrl: './task.component.css'
 })
-export class TaskComponent implements OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked {
+export class TaskComponent implements OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit {
   @Input() task: string = '';
   ngOnChanges(changes: SimpleChanges): void {
     console.log(this.task + ' TasksComponent ngOnChanges', changes);
@@ -22,5 +22,8 @@ export class TaskComponent implements OnInit, OnChanges, DoCheck, AfterContentIn
   }
   ngAfterContentChecked(): void {
     console.log(this.task + ' TasksComponent ngAfterContentChecked');
+  }
+  ngAfterViewInit(): void {
+    console.log(this.task + ' TasksComponent ngAfterViewInit');
   }
 }
