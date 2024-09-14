@@ -6,3 +6,12 @@ article {
 img {
     border-radius: 50%;
 }
+
+.user-info > h2, h4, p {
+    margin-bottom: 0.4em;
+    margin-top: 0em;
+}
+
+.user-details {
+    padding: 1em;
+}
