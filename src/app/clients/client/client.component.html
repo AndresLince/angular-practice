@@ -3,6 +3,13 @@
     <img [src]="getClientImageRoute(client.id)" [alt]="client.imageAlt" />
   </figure>
   <div class="user-details">
-    <h2>{{ client.name }}</h2>
+    <div class="user-info">
+      <h2>{{ client.name }}</h2>
+      <h4>{{ client.twitterAlias }}</h4>
+      <p>{{ client.position }}</p>
+    </div>
+    <div>
+      <button>Details</button>
+    </div>
   </div>
 </article>
