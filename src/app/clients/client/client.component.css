@@ -1,0 +1,33 @@
+article {
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.user-info > h2, h4, p {
+    margin-bottom: 0.4em;
+    margin-top: 0em;
+}
+
+.user-details {
+    padding: 1em;
+}
+
+button {
+    color: white;
+    background-color: blueviolet;
+    border: solid 2px black;
+    border-radius: 0.2em;
+    width: 6em;
+    height: 3em;
+    cursor: pointer;
+}
+
+button:hover {
+    color: white;
+    background-color: black;
+    border-color: blueviolet;
+}
