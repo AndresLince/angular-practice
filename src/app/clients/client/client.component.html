@@ -1,3 +1,8 @@
 <article>
-  <img [src]="getClientImageRoute(client.id)" [alt]="client.imageAlt" />
+  <figure>
+    <img [src]="getClientImageRoute(client.id)" [alt]="client.imageAlt" />
+  </figure>
+  <div class="user-details">
+    <h2>{{ client.name }}</h2>
+  </div>
 </article>
