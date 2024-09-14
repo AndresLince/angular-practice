@@ -6,10 +6,10 @@ import { Component, Input } from '@angular/core';
   styleUrl: './client.component.css'
 })
 export class ClientComponent {
-  @Input() client: { name: string, id: number, imageAlt: string };
+  @Input() client: { name: string, id: number, imageAlt: string, position: string, twitterAlias: string };
 
   constructor() {
-    this.client = { name: '', id: 0, imageAlt: '' };
+    this.client = { name: '', id: 0, imageAlt: '', position: '', twitterAlias: '' };
   }
 
   getClientImageRoute(clientId: number) {
