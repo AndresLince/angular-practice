@@ -15,3 +15,13 @@ img {
 .user-details {
     padding: 1em;
 }
+
+button {
+    color: white;
+    background-color: blueviolet;
+    border: solid 2px black;
+    border-radius: 0.2em;
+    width: 6em;
+    height: 3em;
+    cursor: pointer;
+}
