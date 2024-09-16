@@ -1,5 +1,5 @@
-<article>
-  <figure>
+<article [class]="articleClasses">
+  <figure [class]="figureClasses">
     <img [src]="getClientImageRoute(client.id)" [alt]="client.imageAlt" />
   </figure>
   <div class="user-details">
@@ -10,6 +10,7 @@
     </div>
     <div>
       <button
+        [class]="buttonClasses"
         tabindex="0"
         attr.aria-label="Button details of client {{ client.name }}"
       >
