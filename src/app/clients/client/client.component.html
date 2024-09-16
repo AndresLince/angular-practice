@@ -9,7 +9,12 @@
       <p tabindex="0">{{ client.position }}</p>
     </div>
     <div>
-      <button tabindex="0">Details</button>
+      <button
+        tabindex="0"
+        attr.aria-label="Button details of client {{ client.name }}"
+      >
+        Details
+      </button>
     </div>
   </div>
 </article>
