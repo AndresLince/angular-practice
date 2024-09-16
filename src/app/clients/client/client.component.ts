@@ -7,6 +7,12 @@ import { Component, Input } from '@angular/core';
 })
 export class ClientComponent {
   @Input() client: { name: string, id: number, imageAlt: string, position: string, twitterAlias: string };
+  figureClasses = 'full-width outlined';
+  articleClasses = ['expandable', 'elevated'];
+  buttonClasses = {
+    highlighted: true,
+    embiggened: false,
+  };
 
   constructor() {
     this.client = { name: '', id: 0, imageAlt: '', position: '', twitterAlias: '' };
