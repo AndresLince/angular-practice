@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-client-detail',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './client-detail.component.css'
 })
 export class ClientDetailComponent {
-
+  clientName = new FormControl('');
 }
